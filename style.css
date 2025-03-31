@@ -6,9 +6,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #282828; /* Gruvbox dark background */
     color: #ebdbb2; /* Gruvbox light text */
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+    display: table;
 }
 
 /* Side Panel */
@@ -17,9 +15,8 @@ body {
     background-color: #3c3836; /* Gruvbox dark gray */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: table-column;
+    columns: 0;
 }
 
 .side-panel img {
@@ -50,6 +47,10 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #fabd2f; /* Gruvbox bright yellow */
+    display: table-header-group;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
 }
 
 .header .sections {
