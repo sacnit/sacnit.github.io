@@ -4,11 +4,14 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #1d2021;
+    background-color: #141617;
     color: #d4be98;
+    font-size: 18px;
+    font-family: 'DejaVu Sans Mono', monospace;
 }
 /* Navigation menu styles */
 .header_menu {
+    position: fixed;
     display: flex;
     flex-direction: row;
     gap: 0;
@@ -24,7 +27,6 @@ body {
     border: 2px solid #d4be98;
     border-left: none; /* Remove left border for seamless slant */
     border-right: none;
-    border-top: none;
 }
 .menu_1 {
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
@@ -44,4 +46,42 @@ body {
 .menu_1:hover, .menu_2:hover, .menu_3:hover {
     filter: brightness(60%); /* Darkens the element by 10% */
     transition: filter 0.3s ease; /* Smooth transition effect */
+}
+/* Main conent styles */
+/* markdown converted by https://markdowntohtml.com/ for the content */
+.content {
+    background-color: #1d2021;
+    border: 2px solid #d4be98;
+    width: 80%;
+    height: 98%;
+    margin-left: 10%;
+    padding-top: 0;
+    margin-top: 0;
+}
+.content_title {
+    background: #928374;
+    color: inherit;
+    padding: 8px; /* Add padding for spacing inside the section */
+    border-bottom: 2px solid #d4be98; /* Add a bottom border */
+    margin-top: 0;
+    text-align: center;;
+}
+.content_text {
+    padding-left: 8px;
+    padding-bottom: 8px;
+    height: calc(98% - 88px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.profile_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid #d4be98;
+    display: block;
+    margin: 0 auto;
 }
