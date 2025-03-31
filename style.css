@@ -1,95 +1,27 @@
 /* Gruvbox Dark Theme Inspired Stylesheet */
+/* https://www.color-hex.com/color-palette/1026676 */
 
-/* General Styles */
+/* Body */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #282828; /* Gruvbox dark background */
-    color: #ebdbb2; /* Gruvbox light text */
-    display: table;
+    background-color: #1d2021;
+    color: #d4be98;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* Side Panel */
-.side-panel {
-    width: 250px;
-    background-color: #3c3836; /* Gruvbox dark gray */
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    display: table-column;
-    columns: 0;
-}
-
-.side-panel img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #d79921; /* Gruvbox yellow */
-    margin-bottom: 20px;
-}
-
-.side-panel a {
-    text-decoration: none;
-    color: #b8bb26; /* Gruvbox green */
-    font-size: 16px;
-    margin: 10px 0;
-    transition: color 0.3s;
-}
-
-.side-panel a:hover {
-    color: #fabd2f; /* Gruvbox bright yellow */
+/* Content */
+.content {
+    margin-left: 8px;
+    background-color: #1d2021;
+    color: #d4be98;
 }
 
 /* Header */
 .header {
-    background-color: #504945; /* Gruvbox medium gray */
-    padding: 15px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fabd2f; /* Gruvbox bright yellow */
-    display: table-header-group;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    position: sticky;
-}
-
-.header .sections {
-    margin-top: 10px;
-}
-
-.header .sections a {
-    text-decoration: none;
-    color: #83a598; /* Gruvbox aqua */
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.header .sections a:hover {
-    color: #8ec07c; /* Gruvbox bright aqua */
-}
-
-/* Main Content */
-.main-content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.main-content h1, .main-content h2, .main-content h3 {
-    color: #d3869b; /* Gruvbox purple */
-}
-
-.main-content p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.main-content a {
-    color: #83a598; /* Gruvbox aqua */
-    text-decoration: underline;
-}
-
-.main-content a:hover {
-    color: #8ec07c; /* Gruvbox bright aqua */
+    padding-left: 8px;
+    background-color: #282828;
 }
