@@ -1,2 +1,3 @@
 # sacnit.github.io
-Personal Site
+
+It is neat that you can access any of the files just by changing the directory on the webpage, only unimportant things back here tho...
