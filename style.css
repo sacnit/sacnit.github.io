@@ -1,27 +1,46 @@
 /* Gruvbox Dark Theme Inspired Stylesheet */
-/* https://www.color-hex.com/color-palette/1026676 */
-
-/* Body */
+/* https://user-images.githubusercontent.com/58662350/213884009-87533cf3-e3c5-4d46-85f7-f6993b6dd887.png */
+/* https://user-images.githubusercontent.com/37491630/75227134-891fbb80-57a5-11ea-878e-b8b2972cfd6e.png */
 body {
-    background-color: #1d2021;
-    color: #d4be98;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Content */
-.content {
-    margin-left: 8px;
+    padding: 0;
+    margin: 0;
     background-color: #1d2021;
     color: #d4be98;
 }
-
-/* Header */
-.header {
-    padding-left: 8px;
-    background-color: #282828;
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.menu_1, .menu_2, .menu_3 {
+    display: flex;
+    width: fit-content;
+    padding: 8px 16px;
+    color: #d4be98;
+    background-color: #1d2021; /* Default background to avoid gaps */
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+    border: 2px solid #d4be98;
+    border-left: none; /* Remove left border for seamless slant */
+    border-right: none;
+    border-top: none;
+}
+.menu_1 {
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+    border-left: 2px solid #d4be98; /* Add left border for the first menu */
+    z-index: 3;
+}
+.menu_2 {
+    background-color: #32302f;
+    margin-left: -10px;
+    z-index: 2;
+}
+.menu_3 {
+    background-color: #504945;
+    margin-left: -10px;
+    z-index: 1;
+}
+.menu_1:hover, .menu_2:hover, .menu_3:hover {
+    filter: brightness(60%); /* Darkens the element by 10% */
+    transition: filter 0.3s ease; /* Smooth transition effect */
 }
